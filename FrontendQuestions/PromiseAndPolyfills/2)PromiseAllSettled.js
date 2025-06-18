@@ -47,18 +47,6 @@ const p1 = fakeFetcher("P1", 1000, true);
 const p2 = fakeFetcher("P2", 2000);
 const p3 = fakeFetcher("P3", 3000);
 
-// yes
-// p1().then();
-// p2().then();
-// p3().then();
-
-// no
-// p1().then(() => {
-//     p2().then(() => {
-//         p3().then();
-//     });
-// });
-
 const allData = Promise.allSettled([p1(), p2(), p3()]);
 
 allData
