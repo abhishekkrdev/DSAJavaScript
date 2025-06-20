@@ -1,10 +1,10 @@
-//leetcode.com/problems/valid-palindrome/description/
+//https://leetcode.com/problems/valid-palindrome/description/
 
 /**
  * @param {string} s
  * @return {boolean}
  */
-https: var isPalindrome = function (s) {
+var isPalindrome = function (s) {
     s = s.toLowerCase();
     let start = 0;
     let end = s.length - 1;
